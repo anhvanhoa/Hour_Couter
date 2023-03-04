@@ -119,3 +119,13 @@ body {
     top: 45%;
     transform: translateY(-50%);
 }
+
+/*logo blog*/
+h1 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+a {
+    color: #fff;
+}
