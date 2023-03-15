@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bộ Đếm Giờ</title>
+        <title>Hẹn giờ</title>
         <link rel="stylesheet" href="./style.css" />
-        <script src="./app.js" defer></script>
     </head>
     <body>
-        <noscript> Bạn cần bật javascript để chạy </noscript>
         <nav class="navigate">
-            <li class="nav-link">Báo thức</li>
-            <a href="./countDown.html"><li class="nav-link">Hẹn giờ</li></a>
+            <a href="./index.html">
+                <li class="nav-link">Báo thức</li>
+            </a>
+            <li class="nav-link timer">Hẹn giờ</li>
         </nav>
-        <div class="module">
+        <div class="module module-one">
             <div class="overlay"></div>
             <div class="item-module">
-                <h2>Báo thức</h2>
+                <h2>Hẹn giờ</h2>
                 <div class="wrapper-timer">
                     <div class="group-select">
                         <select id="set-hour">
-                            <option selected hidden value="Hour">Hour</option>
+                            <option selected hidden value="0">Hour</option>
                         </select>
                     </div>
                     <div class="group-select">
                         <select id="set-minute">
-                            <option selected hidden value="Minute">Minute</option>
+                            <option selected hidden value="0">Minute</option>
                         </select>
                     </div>
                 </div>
@@ -40,13 +40,8 @@
                     <div class="item-box-1 minute">00</div>
                     <div class="item-box-1 second">00</div>
                 </div>
-                <div class="box-2">
-                    <div class="item-box-2 month">Mar</div>
-                    ,
-                    <div class="item-box-2 day">Sunday</div>
-                    <div class="item-box-2 date">6</div>
-                </div>
             </div>
         </div>
     </body>
+    <script src="./countDown.js"></script>
 </html>

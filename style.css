@@ -17,6 +17,11 @@ body {
     justify-content: center;
     align-items: center;
     user-select: none;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
 }
 
 .root {
@@ -120,12 +125,111 @@ body {
     transform: translateY(-50%);
 }
 
-/*logo blog*/
-h1 {
+.navigate {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    top: 0;
+    left: 10px;
 }
-a {
+
+.nav-link {
+    list-style: none;
+    font-size: 1.6rem;
+    padding: 5px 15px;
+    background-color: #2d2c34;
+    margin-block: 10px;
+    border-radius: 4px;
+    cursor: pointer;
     color: #fff;
+}
+
+.module {
+    z-index: 1;
+    position: absolute;
+    inset: 0;
+    display: none;
+}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: #282828e6;
+}
+.item-module {
+    text-align: center;
+    width: 550px;
+    background-color: #110e25;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.wrapper-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.item-module h2 {
+    font-size: 3.5rem;
+}
+
+.group-select {
+    display: flex;
+    align-items: center;
+    outline: none;
+    margin: 0 5px;
+}
+
+.group-select label {
+    font-size: 2.5rem;
+    padding: 7px;
+}
+.group-select select {
+    margin: 10px;
+    padding: 5px 20px;
+    background-color: transparent;
+    color: #fff;
+    background-color: #1a1824;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 1.7rem;
+}
+.group-select select option {
+    font-size: 1.5rem;
+    background-color: #1a1824;
+    text-align: left;
+    border-radius: 0;
+}
+
+.group-select select::-webkit-scrollbar {
+    width: 5px;
+}
+.group-select select::-webkit-scrollbar-track {
+    background-color: #5c5c5c;
+}
+
+.group-select select::-webkit-scrollbar-thumb {
+    background-color: #fdfdfd;
+}
+.btn-timer {
+    padding: 5px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #ffe5d9;
+    color: #ffe5d9;
+    font-size: 1.7rem;
+}
+.btn-timer-disable {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.module-one {
+    display: block;
 }
